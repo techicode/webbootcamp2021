@@ -1,0 +1,13 @@
+.main {
+    width: 500px;
+}
+
+.left-box {
+    width: 220px;
+    background-color: darkslategray;
+}
+
+.right-box {
+    width: 220px;
+    background-color: midnightblue;
+}
