@@ -1,0 +1,20 @@
+h1 {
+    background-color: chocolate;
+}
+
+span {
+    background-color: rgb(133, 112, 230);
+}
+
+.inlineh1 {
+    display: inline;
+}
+
+.blockspan {
+    display: block;
+}
+
+.inlineblock {
+    display: inline-block;
+    border: 2px black solid;
+}
