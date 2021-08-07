@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0f0f12;
+}
+
+button {
+    background: none;
+    font-family: 'Georama', sans-serif;
+    font-size: 1em;
+    color: #ff3fb8;
+    border: 2px solid;
+    padding: 0.5em 1em;
+    transition: box-shadow 0.5s, transform 0.2s, color 0.2s;
+}
+
+button:hover {
+    border-color: #58befd;
+    color: #cddfd1;
+    box-shadow: 0 0.5em 0.5em -0.4em #58befd;
+    transform: translateY(-0.2em)
+}

@@ -1,0 +1,36 @@
+.circle {
+    width: 250px;
+    height: 250px;
+    background-color: #df225a;
+    transition: border-radius 2s, background-color 1s;
+}
+
+.circle:hover {
+    background-color: #5e0f26;
+    border-radius: 50%;
+}
+
+.holdbox .box {
+    height: 100px;
+    width: 100px;
+    background-color: #5cd04d;
+    margin: 20px 0;
+    transition: margin-left 2s;
+
+}
+
+.holdbox:hover .box {
+    margin-left: 600px;
+}
+
+.box:nth-of-type(1) {
+    transition-timing-function: ease-in;
+}
+
+.box:nth-of-type(2) {
+    transition-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+
+.box:nth-of-type(3) {
+    transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}

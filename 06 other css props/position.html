@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="position.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Position property</h2>
+    <div class="static">
+        <h3>Static</h3>
+        <p>cant be moved</p>
+        <div class="box"></div>
+        <div class="box middle-box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="relative">
+        <h3>Relative</h3>
+        <p>its move relative to the original position, the next div box respect his position even if is far away</p>
+        <div class="box"></div>
+        <div class="box middle-box">top: 20px <br> left: 10px</div>
+        <div class="box"></div>
+    </div>
+
+    <div class="absolute">
+        <h3>Absolute</h3>
+        <p>its move according to the element that inherit from. here its from class absolute (top left corner)
+            also the next div (box) take his place
+        </p>
+        <div class="box"></div>
+        <div class="box middle-box">top: 120px <br> left: 20px</div>
+        <div class="box"></div>
+    </div>
+
+    <div class="fix">
+        <h3>Fix</h3>
+        <p>The element dont move even if you scroll, his position is according to the element that inherit from. here its from body (top left corner)
+            also the next div (box) take his place
+        </p>
+        <div class="box"></div>
+        <div class="box middle-box">top: 10px</div>
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>
