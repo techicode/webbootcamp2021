@@ -1,0 +1,17 @@
+img {
+    width: 30%;
+    margin: 1% 1.6%;
+}
+
+hr {
+    width: 30%;
+    margin-left: 1.6%;
+    border-top: 1px solid rgb(170, 169, 169);
+}
+
+.title {
+    margin-left: 1.6%;
+    text-transform: uppercase;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.5em;
+}
