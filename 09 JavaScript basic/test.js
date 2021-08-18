@@ -1,8 +1,6 @@
-const mystery = 'Pepes7'; //CHANGE THIS VALUE TO MAKE THE CONDITIONAL BELOW TRUE
+const numbers = [1,2,3,4,5,6,7,8,9]; //DON'T CHANGE THIS LINE PLEASE!
 
-
-
-// LEAVE THIS CODE ALONE! (pretty please)
-if(mystery[0] === 'P' && mystery.length > 5 && mystery.indexOf('7') !== -1){
-    console.log("YOU GOT IT!!!");
+// WRITE YOUR LOOP BELOW THIS LINE:
+for (let number of numbers) {
+    console.log(number * number);
 }
