@@ -38,3 +38,16 @@ const sayHelloBye = (funcHello, funcBye) => {
 }
 
 sayHelloBye(hello, bye);
+
+// method
+const math = {
+    multiply : function (x, y) { return x * y},
+    divide : function (x, y) { return x / y },
+    // define a function without the function keyword
+    sum(x, y) { return x + y} // and still works
+}
+
+// call a method
+console.log(math.multiply(6, 10)); // prints 60
+console.log(math.divide(55, 5)); // prints 11
+console.log(math.sum(10, 12)); // prints 22
