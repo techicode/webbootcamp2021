@@ -2,8 +2,12 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
+const redditData = require('./data.json');
+
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));
+
+app.use(express.static(path.join(__dirname, "/public")));
 
 app.get("/", (req, res) => {
     res.render("home");
@@ -11,7 +15,12 @@ app.get("/", (req, res) => {
 
 app.get("/r/:redditName", (req, res) => {
     const {redditName} = req.params;
-    res.render("reddit", {redditName});
+    const data = redditData[redditName];
+    if (data) {
+        res.render("reddit", {...data});
+    } else {
+        res.render("notfound", {redditName});
+    }
 })
 
 app.get("/cats", (req, res) => {

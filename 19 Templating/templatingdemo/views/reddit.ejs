@@ -1,15 +1,19 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>/r/<%=redditName%></title>
-</head>
+<%- include('partials/head') %>
 <body>
     <h1>
-    This is <%=redditName%> reddit
+        This is <%= name %> reddit
     </h1>
+    <h2><%= description %></h2>
+    <p><%= subscribers %></p>
+
+    <% for (let post of posts) { %>
+        <div>
+
+            <p><%= post.title %> - <b><%= post.author %></b></p>
+            <% if (post.img) { %>
+                <img src="<%= post.img %>" alt="" width="500px">
+            <% } %>
+        </div>
+    <% } %>
 </body>
 </html>
